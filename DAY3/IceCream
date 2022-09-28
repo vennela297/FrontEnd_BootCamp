@@ -1,0 +1,59 @@
+class IceCream {
+
+    constructor(flavor,sprinkle)
+    {
+        
+        this.flavor=flavor
+        this.sprinkle=sprinkle
+    }
+    
+    getSweetness(){
+        var fav=this.flavor
+        return obj[fav]+this.sprinkle
+    }
+    
+    sweetestIceCream(arr){
+        let sweetest=arr[0].getSweetness();
+    for(let object of arr)
+    {
+        if(object.getSweetness()>sweetest)
+        {
+            sweetest=object.getSweetness();
+        }
+    }
+    
+    return sweetest
+    }
+    
+}
+
+var obj= {
+    Plain:0,
+    Vanilla:5,
+  ChocolateChip:5,
+Strawberry:10,
+Chocolate:10
+}
+
+
+
+
+
+let ice1 =new IceCream("Chocolate", 13)  
+let ice2 = new IceCream("Vanilla", 0)   
+let ice3 =new IceCream("Strawberry", 7)   
+ice4 =new IceCream("Plain", 18)         
+ice5 = new IceCream("ChocolateChip", 3)  
+var arr=[ice2,ice3,ice4,ice5]
+
+
+console.log(ice1.getSweetness())
+
+console.log(ice5.sweetestIceCream(arr))
+
+
+
+
+
+
+
