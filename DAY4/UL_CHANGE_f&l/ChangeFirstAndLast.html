@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="firstList">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <ul id="secondList">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+    <button onclick="ChangeText()"></button>
+</body>
+
+<script>
+    function ChangeText(){
+        var element=document.getElementById("firstList")
+       element.firstElementChild.innerHTML="first";
+       element.lastElementChild.innerHTML="last"
+        
+       var secondElement=document.getElementById("secondList")
+       secondElement.firstElementChild.innerHTML="first";
+       secondElement.lastElementChild.innerHTML="last"
+        
+
+    }
+    
+   
+</script>
+</html>
